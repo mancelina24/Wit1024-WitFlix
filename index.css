@@ -15,6 +15,7 @@ header h1 {
   text-shadow: 10px 0 30px black;
   color: red;
   margin: 0;
+  font-size: 4em;
 }
 
 header nav {
@@ -84,7 +85,8 @@ main {
   width: 60%;
 }
 .d_video {
-  width: 100px controls;
+  position: relative;
+  left: 100px;
   height: auto;
   justify-content: center;
 }
