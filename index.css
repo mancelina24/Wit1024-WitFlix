@@ -15,7 +15,7 @@ header h1 {
   text-shadow: 10px 0 30px black;
   color: red;
   margin: 0;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 header nav {
@@ -35,6 +35,7 @@ header nav a:nth-child(2n) {
 .h_panel {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
 }
 
@@ -51,7 +52,7 @@ header nav a:nth-child(2n) {
 }
 .arama_panel {
   position: relative;
-  width: 300px;
+  width: 200px;
 }
 
 .arama_panel input {
@@ -86,7 +87,7 @@ main {
 }
 .d_video {
   position: relative;
-  left: 100px;
+  left: 300px;
   height: auto;
   justify-content: center;
 }
