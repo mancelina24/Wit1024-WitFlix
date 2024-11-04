@@ -84,7 +84,8 @@ main {
   width: 60%;
 }
 .d_image img {
-  display: flex;
+  position: relative;
+  left: 100px;
   width: 300px;
   height: auto;
   justify-content: center;
