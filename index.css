@@ -61,7 +61,7 @@ header nav a:nth-child(2n) {
   font-size: 16px;
 }
 
-.arama_panel::before {
+.arama_panel::after {
   content: "\1F50D";
   position: absolute;
   right: 10px;
@@ -83,10 +83,8 @@ main {
 .main_div {
   width: 60%;
 }
-.d_image img {
-  position: relative;
-  left: 100px;
-  width: 300px;
+.d_video {
+  width: 100px controls;
   height: auto;
   justify-content: center;
 }
