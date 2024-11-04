@@ -86,10 +86,16 @@ main {
   width: 60%;
 }
 .d_video {
+  display: flex;
   position: relative;
-  left: 300px;
+  left: 250px;
   height: auto;
   justify-content: center;
+}
+.d_audio {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .rating {
   color: red;
