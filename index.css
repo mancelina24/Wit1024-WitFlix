@@ -14,10 +14,9 @@ header {
 }
 
 header h1 {
-  text-shadow: 10px 0 30px black;
   color: red;
   margin: 0;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 header nav {
@@ -29,7 +28,7 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 header nav a:nth-child(2n) {
@@ -66,7 +65,7 @@ header nav a:hover {
 .arama_panel input {
   width: 100%;
   padding: 10px 40px 10px 10px;
-  border: 1px solid #ccc;
+  border: 1px solid red;
   border-radius: 20px;
   font-size: 16px;
 }
@@ -78,7 +77,7 @@ header nav a:hover {
   top: 50%;
   transform: translateY(-50%);
   font-size: 18px;
-  color: #888;
+  color: red;
 }
 
 /* MAIN*/
@@ -190,9 +189,9 @@ button i {
   margin-right: 0.25rem;
 }
 ::-webkit-scrollbar {
-  width: 3px;
+  width: 1px;
   background-color: #dd8989;
-  border-left: 1px solid #e67f7f;
+  border-left: 0.5px solid #e67f7f;
 }
 ::-webkit-scrollbar-thumb {
   background-color: black;
@@ -226,7 +225,7 @@ footer h5 {
   text-decoration: none;
 }
 .footer_nav a:hover {
-  color: blue;
+  color: red;
 }
 div.social_media {
   width: 15%;
