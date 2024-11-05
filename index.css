@@ -141,13 +141,48 @@ button i {
 }
 .filmler {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  overflow-x: scroll;
+  height: auto;
+
   justify-content: space-between;
   align-items: center;
+}
+.filmler h2 {
+  font-size: 0.8rem;
+}
+.filmler div {
+  font-size: 0.6rem;
+}
+.filmler_dty span {
+  row-gap: 0.2rem;
+}
+.filmler_dty {
+  min-width: 30%;
+  border: 2px solid red;
+  padding: 0.5rem;
+  border-radius: 8%;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.filmler button {
+  background: red;
+  border: 0;
+  padding: 0.3rem 1rem;
+  color: white;
+  font-size: 0.7rem;
+  border-radius: 0.5rem;
+}
+.filmler button i {
+  row-gap: 0.5rem;
+  margin-left: -0.5rem;
+  margin-right: 0.25rem;
 }
 
 /*  FOOTER */
 footer {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -177,11 +212,11 @@ div.social_media {
   justify-items: center;
 }
 i {
-  margin-right: 20px;
+  margin-right: 2rem;
   justify-content: center;
 }
 div.ikon {
-  margin-left: 27px;
+  margin-left: 0.1rem;
 }
 
 .social_app {
@@ -192,7 +227,7 @@ div.ikon {
   justify-items: center;
 }
 .div_app img {
-  margin-left: 27px;
+  margin-left: 4rem;
 }
 
 /*   MEDIA   */
