@@ -92,11 +92,6 @@ main {
   height: auto;
   justify-content: center;
 }
-.d_audio {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
 .rating {
   color: red;
   font-weight: bold;
