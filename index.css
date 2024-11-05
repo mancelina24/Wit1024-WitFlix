@@ -158,13 +158,20 @@ button i {
   row-gap: 0.2rem;
 }
 .filmler_dty {
+  display: flex;
   min-width: 30%;
+  justify-content: space-between;
+
   border: 2px solid red;
   padding: 0.5rem;
   border-radius: 8%;
   align-items: center;
   margin-left: 10px;
   margin-right: 10px;
+}
+.div_img img {
+  width: 5rem;
+  height: 5rem;
 }
 .filmler button {
   background: red;
