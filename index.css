@@ -159,7 +159,7 @@ button i {
 }
 .filmler_dty {
   display: flex;
-  min-width: 30%;
+  min-width: 18%;
   justify-content: space-between;
 
   border: 2px solid red;
