@@ -292,19 +292,31 @@ i {
   justify-content: center;
 }
 div.ikon {
-  margin-left: 0.1rem;
+  margin: 0;
+  justify-content: space-between;
 }
 
 .social_app {
   width: 15%;
 }
+div.social_app {
+  position: relative;
+  right: 2rem;
+
+}
 .social_app img {
   height: 2rem;
-  justify-items: center;
+  justify-content:center ;
+  margin: 0;
+
 }
 .div_app img {
-  margin-left: 4rem;
+
+  position: absolute;
+  right: .2rem;
 }
+
+
 
 /*   MEDIA   */
 @media (max-width: 500px) {
@@ -312,13 +324,18 @@ div.ikon {
     flex-wrap: wrap;
   }
   header nav {
-    order: 1;
+    order: 2;
     width: 100%;
     justify-content: center;
     margin-top: 1rem;
   }
   header .h_panel {
     display: none;
+  }
+  .fa-bars:before, .fa-navicon:before {
+    order: 1;
+    width: 100%;
+    position: sticky;
   }
   .main_div {
     width: 100%;
@@ -334,9 +351,7 @@ div.ikon {
   .other_movies {
     width: 100%;
   }
-  .fa-bars{
-    display: flex;
-  }
+
   .checkbtn {
     display: block;
     font-size: 5rem;
@@ -345,15 +360,13 @@ div.ikon {
     left: 0.2rem;
   }
   input.check {
-    width: 0.3rem;
+    width: 0.1rem;
     margin: 0;
   }
+
   .nav-mobile {
     top: 160px;
     width: 0.5rem;
-  }
-  nav.hmbr_menu {
-    width: 20%;
   }
   .nav-mobile a {
     font-size: 2rem;
@@ -380,6 +393,18 @@ div.ikon {
     display: none;
   }
 
+  .social_media {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .div.ikon {
+    position: absolute;
+    display: block;
+    margin-left: 150px;
+    left: 200px;
+  }
   .social_media,
   .social_app {
     display: flex;
