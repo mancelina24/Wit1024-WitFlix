@@ -29,6 +29,7 @@ header nav {
 header nav a {
   text-decoration: none;
   color: black;
+  cursor: none;
 }
 
 header nav a:nth-child(2n) {
@@ -39,6 +40,9 @@ header nav a:hover {
   color: black;
 }
 
+div.h_panel{
+  align-items: center;
+}
 .h_panel {
   display: flex;
   align-items: center;
@@ -46,9 +50,7 @@ header nav a:hover {
   gap: 0.5rem;
   pad
 }
-div.h_panel{
-  margin: 0;
-}
+
 .h_panel input {
   padding: 0.3rem;
   width: 7rem;
@@ -82,64 +84,70 @@ div.h_panel{
   font-size: 18px;
   color: red;
 }
-label.hmbr_menu {
-  margin: 0
-};
-nav.hmbr_menu {
-  margin: 0
-};
-.hmbr_menu {
-  padding: 0;
-  background-color: rgb(233, 202, 202);
-  color: red;
-}
-label .checkbtn {
-  margin: 0;
-}
-.checkbtn {
-  font-size: 1.5rem;
-  color: white;
-  cursor: pointer;
-  margin: 0;
-}
-input.check {
-  margin: 0;
-  width: 0.5rem;
-}
-.nav-mobile {
+
+ul.menu{
   display: none;
 }
-.check:checked ~ .nav-mobile {
+.menu {
   display: block;
-}
-.nav-mobile {
-  position: absolute;
-  top: 10rem;
-  right: 3.2rem;
-  background: white;
-  z-index: 1;
-  width: 200px;
-}
-.nav-mobile a {
-  color: black;
-  padding: 1rem 1.5rem;
-  display: block;
-}
-.fas fa-bars {
+  margin: 0 auto;
   position: relative;
-  left: 2rem;
+  width: 50px;
 }
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: none;
+}
+.menu > li > i {
+  width: 2rem;
+  height: auto;
+  color: red;
+  display: block;
+  margin: 0;
+  padding: 10px 20px;
+  text-align: center;
+
+}
+.menu ul {
+  background: red;
+  height: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transition: all .5s ease;
+  top: 35px;
+  width: 100%;
+}
+i {
+  width: 0%;
+}
+.menu li:hover ul {
+  height: 40px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu ul i {
+  color: white;
+  display: block;
+  padding: 5px 20px;
+}
+
+
 
 /* MAIN*/
 main {
   aspect-ratio: 3/1;
   background-color: white;
-  border: 1px solid black;
+  border: 2px solid red;
+  border-radius: 10px;
   margin: 2rem auto;
   display: flex;
   align-items: center;
   padding: 1rem;
 }
+
 .main_div {
   width: 60%;
 }
@@ -219,7 +227,7 @@ button i {
   display: flex;
   min-width: 18%;
   justify-content: space-between;
-
+  margin-bottom: 0.5rem;
   border: 2px solid red;
   padding: 0.5rem;
   border-radius: 8%;
@@ -253,7 +261,7 @@ button i {
   background-color: black;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: black;
+  background-color: red;
 }
 
 /*  FOOTER */
@@ -322,21 +330,24 @@ div.social_app {
 @media (max-width: 500px) {
   header {
     flex-wrap: wrap;
-  }
-  header nav {
-    order: 2;
+}
+header div.h_panel {
+    order: 1;
     width: 100%;
     justify-content: center;
     margin-top: 1rem;
-  }
-  header .h_panel {
-    display: none;
-  }
-  .fa-bars:before, .fa-navicon:before {
-    order: 1;
-    width: 100%;
-    position: sticky;
-  }
+}
+ul.menu {
+  display: flex;
+  order: 0;
+  margin: 0;
+  padding: 0;
+}
+nav.topic {
+  display: none;
+}
+
+
   .main_div {
     width: 100%;
   }
@@ -352,26 +363,6 @@ div.social_app {
     width: 100%;
   }
 
-  .checkbtn {
-    display: block;
-    font-size: 5rem;
-    position: absolute;
-    top: 30px;
-    left: 0.2rem;
-  }
-  input.check {
-    width: 0.1rem;
-    margin: 0;
-  }
-
-  .nav-mobile {
-    top: 160px;
-    width: 0.5rem;
-  }
-  .nav-mobile a {
-    font-size: 2rem;
-    padding: 0.5rem 0.3rem;
-  }
   .div_img img {
     display: none;
   }
@@ -385,30 +376,17 @@ div.social_app {
     display: none;
   }
 
+
+
+
   footer {
     flex-wrap: wrap;
     text-align: center;
-  }
-  .footer_ilk {
-    display: none;
-  }
-
-  .social_media {
-    position: relative;
-    display: flex;
+}
+  footer nav {
+    justify-content: center;
+}
+  .social-navigation, .mobile-app-navigation {
     width: 100%;
-    justify-content: space-between;
-  }
-  .div.ikon {
-    position: absolute;
-    display: block;
-    margin-left: 150px;
-    left: 200px;
-  }
-  .social_media,
-  .social_app {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
+}
 }
