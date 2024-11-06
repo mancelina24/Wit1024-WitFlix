@@ -44,8 +44,11 @@ header nav a:hover {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  pad
 }
-
+div.h_panel{
+  margin: 0;
+}
 .h_panel input {
   padding: 0.3rem;
   width: 7rem;
@@ -79,6 +82,53 @@ header nav a:hover {
   font-size: 18px;
   color: red;
 }
+label.hmbr_menu {
+  margin: 0
+};
+nav.hmbr_menu {
+  margin: 0
+};
+.hmbr_menu {
+  padding: 0;
+  background-color: rgb(233, 202, 202);
+  color: red;
+}
+label .checkbtn {
+  margin: 0;
+}
+.checkbtn {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+}
+input.check {
+  margin: 0;
+  width: 0.5rem;
+}
+.nav-mobile {
+  display: none;
+}
+.check:checked ~ .nav-mobile {
+  display: block;
+}
+.nav-mobile {
+  position: absolute;
+  top: 10rem;
+  right: 3.2rem;
+  background: white;
+  z-index: 1;
+  width: 200px;
+}
+.nav-mobile a {
+  color: black;
+  padding: 1rem 1.5rem;
+  display: block;
+}
+.fas fa-bars {
+  position: relative;
+  left: 2rem;
+}
 
 /* MAIN*/
 main {
@@ -89,6 +139,12 @@ main {
   display: flex;
   align-items: center;
   padding: 1rem;
+}
+.main_div {
+  width: 60%;
+}
+.video_main {
+  width: 40%;
 }
 
 .d_video {
@@ -150,7 +206,7 @@ button i {
   align-items: center;
 }
 .filmler h2 {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
 }
 .filmler div {
   font-size: 0.6rem;
@@ -251,3 +307,83 @@ div.ikon {
 }
 
 /*   MEDIA   */
+@media (max-width: 500px) {
+  header {
+    flex-wrap: wrap;
+  }
+  header nav {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  header .h_panel {
+    display: none;
+  }
+  .main_div {
+    width: 100%;
+  }
+  .video_main {
+    display: none;
+    margin-right: 2rem;
+  }
+  .main_table {
+    width: 90%;
+  }
+
+  .other_movies {
+    width: 100%;
+  }
+  .fa-bars{
+    display: flex;
+  }
+  .checkbtn {
+    display: block;
+    font-size: 5rem;
+    position: absolute;
+    top: 30px;
+    left: 0.2rem;
+  }
+  input.check {
+    width: 0.3rem;
+    margin: 0;
+  }
+  .nav-mobile {
+    top: 160px;
+    width: 0.5rem;
+  }
+  nav.hmbr_menu {
+    width: 20%;
+  }
+  .nav-mobile a {
+    font-size: 2rem;
+    padding: 0.5rem 0.3rem;
+  }
+  .div_img img {
+    display: none;
+  }
+  .filmler button {
+    width: 80%;
+  }
+  h2 {
+    font-size: 0.2rem;
+  }
+  .filmler_dty span {
+    display: none;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .footer_ilk {
+    display: none;
+  }
+
+  .social_media,
+  .social_app {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
