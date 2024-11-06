@@ -40,7 +40,7 @@ header nav a:hover {
   color: black;
 }
 
-div.h_panel{
+div.h_panel {
   align-items: center;
 }
 .h_panel {
@@ -48,7 +48,6 @@ div.h_panel{
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  pad
 }
 
 .h_panel input {
@@ -85,7 +84,7 @@ div.h_panel{
   color: red;
 }
 
-ul.menu{
+ul.menu {
   display: none;
 }
 .menu {
@@ -107,7 +106,6 @@ a:-webkit-any-link {
   margin: 0;
   padding: 10px 20px;
   text-align: center;
-
 }
 .menu ul {
   background: red;
@@ -115,7 +113,7 @@ a:-webkit-any-link {
   left: 0;
   opacity: 0;
   position: absolute;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   top: 35px;
   width: 100%;
 }
@@ -133,8 +131,6 @@ i {
   display: block;
   padding: 5px 20px;
 }
-
-
 
 /* MAIN*/
 main {
@@ -266,7 +262,7 @@ button i {
 
 /*  FOOTER */
 footer {
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -303,51 +299,43 @@ div.ikon {
   margin: 0;
   justify-content: space-between;
 }
-
 .social_app {
   width: 15%;
 }
 div.social_app {
   position: relative;
   right: 2rem;
-
 }
 .social_app img {
   height: 2rem;
-  justify-content:center ;
+  justify-content: center;
   margin: 0;
-
 }
 .div_app img {
-
   position: absolute;
-  right: .2rem;
+  right: 0.2rem;
 }
-
-
 
 /*   MEDIA   */
 @media (max-width: 500px) {
   header {
     flex-wrap: wrap;
-}
-header div.h_panel {
+  }
+  header div.h_panel {
     order: 1;
     width: 100%;
     justify-content: center;
     margin-top: 1rem;
-}
-ul.menu {
-  display: flex;
-  order: 0;
-  margin: 0;
-  padding: 0;
-}
-nav.topic {
-  display: none;
-}
-
-
+  }
+  ul.menu {
+    display: flex;
+    order: 0;
+    margin: 0;
+    padding: 0;
+  }
+  nav.topic {
+    display: none;
+  }
   .main_div {
     width: 100%;
   }
@@ -376,17 +364,45 @@ nav.topic {
     display: none;
   }
 
-
-
-
   footer {
+    width: 100%;
+    margin-top: 0.3rem;
     flex-wrap: wrap;
     text-align: center;
-}
+  }
   footer nav {
     justify-content: center;
-}
-  .social-navigation, .mobile-app-navigation {
-    width: 100%;
-}
+    left: 5;
+  }
+  footer nav a {
+    font-size: 0.8rem;
+  }
+  .footer_ilk {
+    width: 50%;
+    font-size: 0.5rem;
+  }
+  .social_media {
+    left: 2rem;
+    width: 25%;
+    height: auto;
+  }
+  div.social_app {
+    width: 25%;
+    left: 0.8rem;
+  }
+  div.ikon {
+    display: flex;
+    margin-left: 0.5;
+    padding-left: 0.5;
+    padding-top: 1rem;
+    width: 70%;
+  }
+  .social_app img {
+    top: 1.5rem;
+    left: 1rem;
+    width: 70%;
+  }
+  h5 {
+    margin-bottom: 0;
+  }
 }
