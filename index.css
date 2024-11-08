@@ -45,7 +45,7 @@ header nav a:hover {
 
 div.h_panel {
   position: relative;
-  left: 200px;
+  left: 300px;
   align-items: center;
 }
 .h_panel {
@@ -337,7 +337,10 @@ i {
     width: 100%;
     justify-content: center;
     margin-top: 1rem;
+    left: 10px;
+    align-items: center;
   }
+
   ul.menu {
     display: flex;
     order: 0;
@@ -346,6 +349,7 @@ i {
   }
   nav.topic {
     display: none;
+    order: 2;
   }
   .main_div {
     width: 100%;
@@ -399,16 +403,19 @@ i {
   }
   div.social_app {
     width: 25%;
-    left: 0.8rem;
+    left: 1rem;
   }
   div.ikon {
     display: flex;
-    margin-left: 0.5;
-    padding-left: 0.5;
     padding-top: 1rem;
     width: 70%;
   }
-
+  .fa-brands,
+  .fab {
+    font-size: small;
+    padding: 0.5;
+    margin: 0;
+  }
   h5 {
     margin-bottom: 0;
   }
