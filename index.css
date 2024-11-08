@@ -186,12 +186,13 @@ button {
   border: 0;
   padding: 0.6rem 2.1rem;
   color: white;
-  font-size: 1.2rem;
   border-radius: 0.5rem;
+  font-size: large;
 }
-button i {
-  margin-left: -1rem;
-  margin-right: 0.5rem;
+button.deneme i {
+  margin-left: -2rem;
+  margin-right: 2.2rem;
+  font-size: 1.2rem;
 }
 
 /*  SECTION */
@@ -251,7 +252,10 @@ button i {
 .filmler button i {
   row-gap: 0.5rem;
   margin-left: -0.5rem;
-  margin-right: 0.25rem;
+  margin-right: 0.7rem;
+}
+.dn i {
+  font-size: 0.5rem;
 }
 ::-webkit-scrollbar {
   width: 1px;
@@ -296,33 +300,35 @@ div.social_media {
   width: 15%;
   justify-items: center;
 }
+div.ikon {
+  height: 45%;
+}
 i {
   margin-right: 2rem;
   justify-content: center;
+  height: 15%;
 }
-div.ikon {
-  margin: 0;
-  justify-content: space-between;
+.fa-brands,
+.fab {
+  font-size: xx-large;
+  padding: 0.5rem;
 }
+
 .social_app {
   width: 15%;
 }
-div.social_app {
-  position: relative;
-  right: 2rem;
-}
 .social_app img {
-  height: 2rem;
+  position: relative;
+  left: 1.2rem;
+  display: flex;
   justify-content: center;
-  margin: 0;
-}
-.div_app img {
-  position: absolute;
-  right: 0.2rem;
+  align-items: center;
+  height: 5vh;
+  width: 75%;
 }
 
 /*   MEDIA   */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header {
     flex-wrap: wrap;
   }
@@ -402,11 +408,7 @@ div.social_app {
     padding-top: 1rem;
     width: 70%;
   }
-  .social_app img {
-    top: 1.5rem;
-    left: 1rem;
-    width: 70%;
-  }
+
   h5 {
     margin-bottom: 0;
   }
