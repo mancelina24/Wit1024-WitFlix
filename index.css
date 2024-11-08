@@ -346,18 +346,25 @@ i {
     padding: 0;
     text-align: center;
   }
-  .menu li:hover ul {
-    height: 50px;
-    opacity: 1;
-    transform: translateY(0);
+  .fas,
+  .fa-bars,
+  .drm {
+    font-size: xx-large;
+    padding: 0.5rem;
   }
-
-  .menu ul i {
-    color: #000;
+  .menu li:hover ul {
+    height: 75px;
+    width: 200px;
+    background-color: white;
+    opacity: 1;
+  }
+  .menu li i {
+    color: red;
     display: flex;
     height: 2rem;
     width: 2rem;
   }
+
   header div.h_panel {
     order: 2;
     width: 100%;
